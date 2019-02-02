@@ -14,7 +14,7 @@ Algorithm: ACKTR
 - Methods
   - **Actor** 
     - Use the Kronecker-factored trust region (ACKTR) to compute the natural gradient update, then apply the natural gradient update to both the actor and the critic.
-    - Fisher metric is defined as (pic)
+    - Fisher metric is defined as ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/012_1.png)
   - **Critic** 
     - The learning process is similar to a least-squares function approximation problem
     - Since the second-order algorithm is Gauss-Newton, which is equivalent to the Fisher matrix for a Gaussian observation model, K-FAC is also applied to the critic.
