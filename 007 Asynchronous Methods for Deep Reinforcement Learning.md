@@ -28,5 +28,4 @@ Algorithm: A3C
     - Give each thread a different exploration policy
   - Algorithm:
 
-  ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/012_1.png)
-
+  ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/007_1.png)
