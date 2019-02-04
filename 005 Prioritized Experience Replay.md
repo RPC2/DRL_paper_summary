@@ -18,7 +18,11 @@ Algorithm: Prioritized Experience Replay (PER)
 
   - The importance of each transition is measured by the amount an agent can learn from this transition (expected learning progress), and TD error is a reasonable proxy as it shows how "surprising" this transition is.
 
-  - Use stochastic sampling method to avoid overfitting:![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/006_1.png), where p is each transition's priority value.
+  - Use stochastic sampling method to avoid overfitting:
+
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/006_1.png),
+
+    where p is each transition's priority value.
 
     - When alpha > 0, the agent samples greedily.
     - When alpha = 0, it's uniform sampling.
