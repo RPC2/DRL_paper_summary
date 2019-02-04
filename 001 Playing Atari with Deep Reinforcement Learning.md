@@ -15,9 +15,10 @@ Algorithm: DQN
 - Methods
   - Use Q-learning methods to learn the Q values of each state.
   - Instead of using a linear policy, use a neural network as the action-value function approximator.
-  - For every T steps, compute the loss function by comparing the output of policy network and target network, then perform stochastic gradient descent to adjust the parameters of the policy network.
+  - Store the transitions of states, relevant actions, and reward signals in the replay memory.
+  - Randomly sample a batch of replay memory to compute the loss function by comparing the output of policy network and target network, then perform stochastic gradient descent to adjust the parameters of the policy network.
   - This algorithm is model-free as it directly uses samples from the emulator without explicitly constructing a model of the emulator.
   - This algorithm is off-policy as it follows a greedy strategy (taking the argmax of predicted Q values).
-  - Algorithm
+- Algorithm
 
 ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/001_1.png)
