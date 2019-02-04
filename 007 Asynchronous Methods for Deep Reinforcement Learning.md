@@ -18,7 +18,7 @@ Algorithm: A3C
     - Since agents are in different states, the data collected are decorrelated. --> Avoid using experience replay --> Save memory and computational resources
     - It enables several fundamental on-policy RL algorithms.
 
-    (This algorithm enables training on standard multi-core CPU --> Requires less time, less resources)
+    (This algorithm enables training on standard multi-core CPU --> Requires less time, fewer resources)
 
 - Methods
 
