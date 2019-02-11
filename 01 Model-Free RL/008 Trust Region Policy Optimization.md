@@ -40,8 +40,4 @@ Algorithm: TRPO
 
     ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/008_2.png)
 
-  - Pseudocode (from OpenAI Spinning Up's algorithm docs)
-
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/008_2.png)
-
     
