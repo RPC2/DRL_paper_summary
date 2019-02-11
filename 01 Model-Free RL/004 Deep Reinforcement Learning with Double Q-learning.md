@@ -23,10 +23,10 @@ Algorithm: Double DQN
 
   - Double Q-learning: reduce overestimations by decomposing the max operation in the target into action selection and action evaluation. This is done by replacing the target y in classical DQN into:
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/004_1.png)
+    ![004_1](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/004_1.png)
 
 - Algorithm:
 
-  ![004_2](/Users/cynthiachen/Documents/GitHub/DRL_paper_summary/pic/004_2.png)
+  ![004_2](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/004_2.png)
 
   (The above algorithm is from [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581), Wang et al, 2015.)

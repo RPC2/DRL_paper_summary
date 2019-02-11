@@ -20,7 +20,7 @@ Algorithm: Prioritized Experience Replay (PER)
 
   - Use stochastic sampling method to avoid overfitting:
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/005_1.png),
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/005_1.png),
 
     where p is each transition's priority value.
 
@@ -31,8 +31,8 @@ Algorithm: Prioritized Experience Replay (PER)
 
   - Correct the bias introduced by prioritized replay by using importance-sampling weights:
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/005_2.png)
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/005_2.png)
 
 - Algorithm
 
-  ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/005_3.png)
+  ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/005_3.png)

@@ -24,13 +24,13 @@ Algorithm: TRPO
 
     - Vine method: requiring the system to be restored to particular states, and is especially useful for simulation.
 
-      ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/008_1.png)
+      ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/008_1.png)
 
   - Optimize a surrogate objective with a penalty on KL divergence.
 
   - Enforce a constraint (i.e., a trust region constraint) on the KL divergence between the new policy and the old policy during each update.
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/008_0.png)
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/008_0.png)
 
     This method of optimization guarantees monotonic improvement. i.e., the new policy generated is no worse than the old policy. 
 
@@ -38,6 +38,6 @@ Algorithm: TRPO
 
   - Algorithm from the paper:
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/008_2.png)
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/008_2.png)
 
     

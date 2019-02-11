@@ -19,7 +19,7 @@ Algorithm: Rainbow DQN
 
   - Replay the 1-step distributional loss with a multi-step variant. The resulting loss is 
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/006_1.png)
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/006_1.png)
 
   - Combine this multi-step distributional loss with double Q-learning
 
@@ -31,8 +31,8 @@ Algorithm: Rainbow DQN
 
     - The values and advantages are aggregated, then passed through a softmax layer to obtain the normalized parametric distributions:
 
-      ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/006_2.png)
+      ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/006_2.png)
 
   - Replace all linear layers with their noisy equivalence:
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/006_3.png)
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/006_3.png)

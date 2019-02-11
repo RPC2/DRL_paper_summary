@@ -21,4 +21,4 @@ Algorithm: DQN
   - This algorithm is off-policy as it follows a greedy strategy (taking the argmax of predicted Q values).
 - Algorithm
 
-![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/001_1.png)
+![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/001_1.png)

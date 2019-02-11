@@ -19,7 +19,7 @@ Algorithm: Deep Recurrent Q-Learning
 
   - Process the state image by three convolutional layers, and feed the outputs to the fully connected LSTM layer.
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/pic/002_1.png)
+    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/002_1.png)
 
   - Stable recurrent updates
 
