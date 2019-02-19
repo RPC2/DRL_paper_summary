@@ -43,4 +43,8 @@ Algorithm: GAE
 
     ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_5.png)
 
+  Using the generalized advantage estimator, the discounted policy gradient is thus:
+
+- Interpretation as reward shaping
+
   
