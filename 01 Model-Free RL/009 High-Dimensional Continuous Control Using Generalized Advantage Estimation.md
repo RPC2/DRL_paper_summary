@@ -27,17 +27,19 @@ Algorithm: GAE
 
   - A general summary of policy gradient methods
 
-    - ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_1.png)
+    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_1.png)
 
   - Define gamma-just for an estimator
 
-    - ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_2.png)
+    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_2.png)
 
   - Producing an accurate estimator
 
-    - ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_3.png)
+    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_3.png)
+
     - 0 < lambda < 1, and thus adjusting the value of lambda is making a tradeoff between bias and variance
-    - ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_4.png)
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_4.png)
 
   - Using the generalized advantage estimator, the discounted policy gradient is thus:
 
