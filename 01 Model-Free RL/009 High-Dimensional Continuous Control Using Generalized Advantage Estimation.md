@@ -43,8 +43,14 @@ Algorithm: GAE
 
     ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_5.png)
 
-  Using the generalized advantage estimator, the discounted policy gradient is thus:
 
-- Interpretation as reward shaping
+- Value function estimation
+
+  - Use TRPO for adjusting policy network
+
+    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/009_5.png)
+
+    (For details about TRPO, please refer to the summary [here](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/008%20Trust%20Region%20Policy%20Optimization.md))
 
   
+
