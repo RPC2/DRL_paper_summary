@@ -1,6 +1,8 @@
 # Summary of key papers in Deep Reinforcement Learning
 
-This repository contains the summaries of key papers in deep reinforcement learning listed in OpenAI [Spinning Up](https://spinningup.openai.com/en/latest/index.html). The summaries aim to provide a high-level overview of each paper, listing out the key problems the authors tried to solve and the main contributions / algorithms proposed. Readers are encouraged to read the original papers if they are interested in digging more into any specific paper.
+This repository contains the summaries of key papers in deep reinforcement learning listed in OpenAI [Spinning Up](https://spinningup.openai.com/en/latest/index.html). The summaries aim to provide a high-level overview of each paper, listing out the key problems the authors tried to solve and the main contributions / algorithms proposed. 
+
+This list is well organized so that the former papers serve as prerequisites for the later ones. Readers are encouraged to read the original papers if they are interested in digging more into any specific details.
 
 
 
@@ -30,7 +32,7 @@ This repository contains the summaries of key papers in deep reinforcement learn
 
 [9] High-Dimensional Continuous Control Using Generalized Advantage Estimation, Schulman et al, 2015. **Algorithm: GAE.** [[paper](https://arxiv.org/abs/1506.02438)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/009%20High-Dimensional%20Continuous%20Control%20Using%20Generalized%20Advantage%20Estimation.md)]
 
-[10] Proximal Policy Optimization Algorithms, Schulman et al, 2017. **Algorithm: PPO-Clip, PPO-Penalty.** [[paper](https://arxiv.org/abs/1707.06347)]
+[10] Proximal Policy Optimization Algorithms, Schulman et al, 2017. **Algorithm: PPO-Clip, PPO-Penalty.** [[paper](https://arxiv.org/abs/1707.06347)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/010%20Proximal%20Policy%20Optimization%20Algorithms.md)]
 
 [11] Emergence of Locomotion Behaviours in Rich Environments, Heess et al, 2017. **Algorithm: PPO-Penalty.** [[paper](https://arxiv.org/abs/1707.02286)]
 
