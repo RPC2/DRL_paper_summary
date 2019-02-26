@@ -38,6 +38,6 @@ This list is well organized so that the former papers serve as prerequisites for
 
 [12] Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation, Wu et al, 2017. **Algorithm: ACKTR.** [[paper](https://arxiv.org/abs/1708.05144)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/012%20Scalable%20trust-region%20method%20for%20deep%20reinforcement%20learning%20using%20Kronecker-factored%20approximation.md)]
 
-[13] Sample Efficient Actor-Critic with Experience Replay, Wang et al, 2016. **Algorithm: ACER.** [[paper](https://arxiv.org/abs/1611.01224)]
+[13] Sample Efficient Actor-Critic with Experience Replay, Wang et al, 2016. **Algorithm: ACER.** [[paper](https://arxiv.org/abs/1611.01224)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/013%20Sample%20Efficient%20Actor-Critic%20with%20Experience%20Replay.md)]
 
 [14] Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor, Haarnoja et al, 2018. **Algorithm: SAC.** [[paper](https://arxiv.org/abs/1801.01290)]
