@@ -43,5 +43,33 @@ Year: 2017
 
   - Importance weight truncation with bias correction
 
-    - 
+    - To avoid high-variance, decomposite g as:
 
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/013_4.png)
+
+      - The clipping of the importance weight (the first term) ensures that the variance of the gradient estimate is bounded.
+      - The correction term (the second term) ensures that our estimate is unbiased.
+
+    - "Truncation with bias correction" trick:
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/013_5.png)
+
+    - The off-policy ACER gradient:
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/013_6.png)
+
+  - Efficient Trust Region Policy Optimization
+
+    - Average policy network: a running average of past policies and forces the updated policy to not deviate far from this average.
+
+    - Calculation steps:
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/013_7.png)
+
+  - Algorithm:
+
+    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/013_8.png)
+
+    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/013_9.png)
+
+    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/013_10.png)
