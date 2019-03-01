@@ -45,4 +45,34 @@ Year: 2014
 
     ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_4.png)
 
-  - 
+  - On-policy Deterministic Actor-Critic
+
+    - Using the Sarsa update to estimate the action-value function:
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_5.png)
+
+  - Off-policy Deterministic Actor-Critic
+
+    - Modify the performance objective to be the value function (which is the expected value over target policy and the state distribution of the behavior policy)
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_6.png)
+
+    - The off-policy deterministic policy gradient:
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_7.png)
+
+    - Off-policy deterministic algorithm: the critic uses Q-learning updates to estimate the action-value function
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_8.png)
+
+  - Compatible function approximation
+
+    - The following theorem applies to both on-policy and off-policy algorithms:
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_9.png)
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_10.png)
+
+    - The Compatible Off-Policy Deterministic Actor-Critic (COPDAC) algorithm with a simple Q-learning critic:
+
+      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/015_11.png)

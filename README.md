@@ -46,7 +46,7 @@ This list is well organized so that the former papers serve as prerequisites for
 
 ### c. Deterministic Policy Gradients
 
-[15] Deterministic Policy Gradient Algorithms, Silver et al, 2014. **Algorithm: DPG.** [[paper](http://proceedings.mlr.press/v32/silver14.pdf)]
+[15] Deterministic Policy Gradient Algorithms, Silver et al, 2014. **Algorithm: DPG.** [[paper](http://proceedings.mlr.press/v32/silver14.pdf)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/015%20Deterministic%20Policy%20Gradient%20Algorithms.md)]
 
 [16] Continuous Control With Deep Reinforcement Learning, Lillicrap et al, 2015. **Algorithm: DDPG.** [[paper](https://arxiv.org/abs/1509.02971)]
 
