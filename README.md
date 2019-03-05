@@ -48,6 +48,28 @@ This list is well organized so that the former papers serve as prerequisites for
 
 [15] Deterministic Policy Gradient Algorithms, Silver et al, 2014. **Algorithm: DPG.** [[paper](http://proceedings.mlr.press/v32/silver14.pdf)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/015%20Deterministic%20Policy%20Gradient%20Algorithms.md)]
 
-[16] Continuous Control With Deep Reinforcement Learning, Lillicrap et al, 2015. **Algorithm: DDPG.** [[paper](https://arxiv.org/abs/1509.02971)]
+[16] Continuous Control With Deep Reinforcement Learning, Lillicrap et al, 2015. **Algorithm: DDPG.** [[paper](https://arxiv.org/abs/1509.02971)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/016%20Continuous%20control%20with%20deep%20reinforcement%20learning.md)]
 
-[17] Addressing Function Approximation Error in Actor-Critic Methods, Fujimoto et al, 2018. **Algorithm: TD3.** [[paper](https://arxiv.org/abs/1802.09477)]
+[17] Addressing Function Approximation Error in Actor-Critic Methods, Fujimoto et al, 2018. **Algorithm: TD3.** [[paper](https://arxiv.org/abs/1802.09477)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/017%20Addressing%20Function%20Approximation%20Error%20in%20Actor-Critic%20Methods.md)]
+
+
+
+### d. Distributional Reinforcement Learning
+
+[18] A Distributional Perspective on Reinforcement Learning, Bellemare et al, 2017. **Algorithm: C51.** [[paper](https://arxiv.org/abs/1707.06887)]
+
+[19] Distributional Reinforcement Learning with Quantile Regression, Dabney et al, 2017. **Algorithm: QR-DQN.** [[paper](https://arxiv.org/abs/1710.10044)] 
+
+[20] Implicit Quantile Networks for Distributional Reinforcement Learning, Dabney et al, 2018. **Algorithm: IQN.** [[paper](https://arxiv.org/abs/1806.06923)]
+
+[21] Dopamine: A Research Framework for Deep Reinforcement Learning, Anonymous, 2018. **Contribution:** Introduces Dopamine, a code repository containing implementations of DQN, C51, IQN, and Rainbow. [Code link.](https://github.com/google/dopamine) [[paper](https://openreview.net/forum?id=ByG_3s09KX)]
+
+
+
+### e. Policy Gradients with Action-Dependent Baselines
+
+[22] Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic, Gu et al, 2016. **Algorithm: Q-Prop.** [[paper](https://arxiv.org/abs/1611.02247)]
+
+[23] Action-depedent Control Variates for Policy Optimization via Stein’s Identity, Liu et al, 2017. **Algorithm: Stein Control Variates.** [[paper](https://arxiv.org/abs/1710.11198)]
+
+[24] The Mirage of Action-Dependent Baselines in Reinforcement Learning, Tucker et al, 2018. **Contribution:** interestingly, critiques and reevaluates claims from earlier papers (including Q-Prop and stein control variates) and finds important methodological errors in them. [[paper](https://arxiv.org/abs/1802.10031)]
