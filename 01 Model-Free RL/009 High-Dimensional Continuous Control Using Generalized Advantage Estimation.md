@@ -6,7 +6,7 @@ Year: 2017
 
 Algorithm: GAE
 
-(Note: As this repository aims to only put together major contributions proposed by each paper instead of explaining concepts, the summary here omits many background information and the deduction processes of each formula. For greater details, please refer to the original paper. A clear explanation of GAE can also be found in the blog post [here](https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/).)
+(Note: The summary here omits deduction processes of each formula. For greater details, please refer to the original paper. A clear explanation of GAE can also be found in the blog post [here](https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/).)
 
 - Problems
   - Two main challenges for policy gradient methods:
