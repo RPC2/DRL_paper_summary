@@ -11,8 +11,8 @@ Algorithm: GAE
 - Problems
   - Two main challenges for policy gradient methods:
     - The large number of sample required
-    - Difficulty of obtaining stable and steady improvement
-  - High bias is more harmful than high variance - it can calse the algorithm to fail to converge, or to converge to a poor solution.
+    - Difficulty in obtaining stable and steady improvement
+  - High bias is more harmful than high variance - it can cause the algorithm to fail to converge, or  converge to a poor solution.
 
 - Proposed solution
   - For the first challenge: Use value functions to reduce the variance of policy gradient estimates with an estimator of the advantage function.

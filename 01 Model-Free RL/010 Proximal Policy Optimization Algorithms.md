@@ -10,7 +10,7 @@ Year: 2017
 
 - Hypothesis
 
-  - An objective function with clipped probability ratios which forms a lower bound of the performance of the policy, and alternating between sampling data & optimization on optimizing policies will improve the performance of the algorithm while maintaining simple and data-efficient.
+  - An objective function with clipped probability ratios which forms a lower bound of the performance of the policy, and alternating between sampling data & optimization on optimizing policies will improve the performance of the algorithm while remaining simple and data-efficient.
 
 - Solutions
 
