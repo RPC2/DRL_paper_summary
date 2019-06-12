@@ -68,7 +68,7 @@ This list is well organized so that the former papers serve as prerequisites for
 
 ### e. Policy Gradients with Action-Dependent Baselines
 
-[22] Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic, Gu et al, 2016. **Algorithm: Q-Prop.** [[paper](https://arxiv.org/abs/1611.02247)]
+[22] Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic, Gu et al, 2016. **Algorithm: Q-Prop.** [[paper](https://arxiv.org/abs/1611.02247)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/022%20Q-Prop%20Sample-Efficient%20Policy%20Gradient%20with%20An%20Off-Policy%20Critic.md)]
 
 [23] Action-depedent Control Variates for Policy Optimization via Stein’s Identity, Liu et al, 2017. **Algorithm: Stein Control Variates.** [[paper](https://arxiv.org/abs/1710.11198)]
 
