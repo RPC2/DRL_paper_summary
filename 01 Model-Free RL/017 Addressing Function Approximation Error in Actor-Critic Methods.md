@@ -2,6 +2,8 @@
 
 Authors: Scott Fujimoto, Herke van Hoof, David Meger
 
+Algorithm: TD3
+
 Year: 2018
 
 - Problems
