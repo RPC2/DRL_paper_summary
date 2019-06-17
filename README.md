@@ -70,6 +70,6 @@ This list is well organized so that the former papers serve as prerequisites for
 
 [22] Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic, Gu et al, 2016. **Algorithm: Q-Prop.** [[paper](https://arxiv.org/abs/1611.02247)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/022%20Q-Prop%20Sample-Efficient%20Policy%20Gradient%20with%20An%20Off-Policy%20Critic.md)]
 
-[23] Action-depedent Control Variates for Policy Optimization via Stein’s Identity, Liu et al, 2017. **Algorithm: Stein Control Variates.** [[paper](https://arxiv.org/abs/1710.11198)]
+[23] Action-depedent Control Variates for Policy Optimization via Stein’s Identity, Liu et al, 2017. **Algorithm: Stein Control Variates.** [[paper](https://arxiv.org/abs/1710.11198)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/023%20Action-dependent%20Control%20Variates%20for%20Policy%20Optimization%20via%20Stein's%20Identity.md)]
 
 [24] The Mirage of Action-Dependent Baselines in Reinforcement Learning, Tucker et al, 2018. **Contribution:** interestingly, critiques and reevaluates claims from earlier papers (including Q-Prop and stein control variates) and finds important methodological errors in them. [[paper](https://arxiv.org/abs/1802.10031)]
