@@ -73,3 +73,51 @@ This list is well organized so that the former papers serve as prerequisites for
 [23] Action-depedent Control Variates for Policy Optimization via Stein’s Identity, Liu et al, 2017. **Algorithm: Stein Control Variates.** [[paper](https://arxiv.org/abs/1710.11198)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01%20Model-Free%20RL/023%20Action-dependent%20Control%20Variates%20for%20Policy%20Optimization%20via%20Stein's%20Identity.md)]
 
 [24] The Mirage of Action-Dependent Baselines in Reinforcement Learning, Tucker et al, 2018. **Contribution:** interestingly, critiques and reevaluates claims from earlier papers (including Q-Prop and stein control variates) and finds important methodological errors in them. [[paper](https://arxiv.org/abs/1802.10031)]
+
+
+
+## 2. Exploration
+
+### a. Intrinsic Motivation
+
+[39] Exploration by Random Network Distillation, Burda et al, 2018. **Algorithm: RND** [[paper](https://arxiv.org/abs/1810.12894)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/02%20Exploration/039%20Exploration%20by%20Random%20Network%20Distillation.md)]
+
+
+
+## 3. Transfer and Multitask RL
+
+[43] Progressive Neural Networks, Rusu et al, 2016. **Algorithm: Progressive Networks** [[paper](https://arxiv.org/abs/1606.04671)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/03%20Transfer%20and%20Multitask%20RL/043%20Progressive%20Neural%20Networks.md)]
+
+[44] Universal Value Function Approximators, Schaul et al, 2015. **Algorithm: UVFA.** [[paper](http://proceedings.mlr.press/v37/schaul15.pdf)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/03%20Transfer%20and%20Multitask%20RL/044%20Universal%20Value%20Function%20Approximators.md)]
+
+[45] Reinforcement Learning with Unsupervised Auxiliary Tasks, Jaderberg et al, 2016. **Algorithm: UNREAL** [[paper](https://arxiv.org/abs/1611.05397)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/03%20Transfer%20and%20Multitask%20RL/045%20Reinforcement%20Learning%20with%20Unsupervised%20Auxiliary%20Tasks.md)]
+
+[50] Hindsight Experience Replay, Andrychowicz et al, 2017. **Algorithm: Hindsight Experience Replay (HER)** [[paper](https://arxiv.org/abs/1707.01495)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/03%20Transfer%20and%20Multitask%20RL/050%20Hindsight%20Experience%20Replay.md)]
+
+
+
+## 6. Model-Based RL
+
+### a. Model is Learned
+
+[59] Imagination-Augmented Agents for Deep Reinforcement Learning, Weber et al, 2017. **Algorithm: I2A** [[paper](https://arxiv.org/abs/1707.06203)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/06%20Model-Based%20RL/059%20Imagination-Augmented%20Agents%20for%20Deep%20Reinforcement%20Learning.md)]
+
+[60] Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning, Nagabandi et al, 2017. **Algorithm: MBMF** [[paper](https://arxiv.org/abs/1708.02596)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/06%20Model-Based%20RL/060%20Neural%20Network%20Dynamics%20for%20Model-Based%20Deep%20Reinforcement%20Learning%20with%20Model-Free%20Fine-Tuning.md)]
+
+[61] Model-Based Value Expansion for Efficient Model-Free Reinforcement Learning, Feinberg et al, 2018. **Algorithm: MVE** [[paper](https://arxiv.org/abs/1803.00101)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/06%20Model-Based%20RL/061%20Model-Based%20Value%20Expansion%20for%20Efficient%20Model-Free%20Renforcement%20Learning.md)]
+
+### b. Model is Given
+
+[66] Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm, Silver et al, 2017. **Algorithm: AlphaZero** [[paper](https://arxiv.org/abs/1712.01815)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/06%20Model-Based%20RL/066%20Mastering%20Chess%20and%20Shogi%20by%20Self-Play%20with%20a%20General%20Reinforcement%20Learning%20Algorithm.md)]
+
+[67] Thinking Fast and Slow with Deep Learning and Tree Search, Anthony et al, 2017. **Algorithm: ExIt** [[paper](https://arxiv.org/abs/1705.08439)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/06%20Model-Based%20RL/067%20Thinking%20Fast%20and%20Slow%20with%20Deep%20Learning%20and%20Tree%20Search.md)]
+
+
+
+## 7. Meta-RL
+
+[68] RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning, Duan et al, 2016. **Algorithm: RL^2** [[paper](https://arxiv.org/abs/1611.02779)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/07%20Meta-RL/068%20RL2%20Fast%20Reinforcement%20Learning%20via%20Slow%20Reinforcement%20Learning.md)]
+
+[69] Learning to Reinforcement Learn, Wang et al, 2016. [[paper](https://arxiv.org/abs/1611.05763)] [summary]
+
+[70] Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks, Finn et al, 2017. **Algorithm: MAML** [[paper](https://arxiv.org/abs/1703.03400)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/07%20Meta-RL/070%20Model-Agnostic%20Meta-Learning%20for%20Fast%20Adaptation%20of%20Deep%20Networks.md)]
