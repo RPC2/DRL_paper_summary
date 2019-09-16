@@ -10,7 +10,7 @@ Year: 2017
 
   - Meta-Learning: To learn and adapt quickly from only a few examples, and produce good generalization performance on the task.
 
-- Key summary of the method
+- Summary of the method
 
   - Train the model's initial parameters such that the model has maximal performance on a new task, where the parameters will be updated through some gradient descent steps with a small amount of data of the new task.
   - The algorithm can be applied on different model types, including fully connected CNN, and several distinct domains, including few-shot regression, image classification, and reinforcement learning.
