@@ -49,7 +49,7 @@
 
 - **Further Modification**
 
-  - In 2015, DeepMind published [*Human Level Control Through Deep Reinforcement Learning*](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf), a updated version of DQN, by using an additional **target action-value network** to approximate the TD-target value for optimization. 
+  - In 2015, DeepMind published [*Human Level Control Through Deep Reinforcement Learning*](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf), an updated version of DQN, by using an additional **target action-value network** to approximate the TD-target value for optimization. 
 
   - **Advantage:** Generating the targets using an older set of parameters adds a delay between the time an update to <img src="https://latex.codecogs.com/svg.latex?\large&space;Q" title="\large Q" /> is made and the time the update affects the targets <img src="https://latex.codecogs.com/svg.latex?\large&space;y_j" title="\large y_j" />, making divergence or oscillations much more unlikely.
 
