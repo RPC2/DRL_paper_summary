@@ -4,7 +4,7 @@ This repository contains the summaries of key papers in deep reinforcement learn
 
 This list is well organized so that the former papers serve as prerequisites for the later ones. Readers are encouraged to read the original papers if they are interested in digging more into any specific details.
 
-
+These summaries are co-authored by [Cynthia Chen](https://github.com/RPC2) and [Yawen Duan](https://github.com/kmdanielduan).
 
 ## 1. Model-Free Reinforcement Learning
 
