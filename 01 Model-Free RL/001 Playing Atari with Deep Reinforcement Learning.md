@@ -6,7 +6,7 @@
 
 **Algorithm**: DQN
 
-**Links:** [[arxiv](https://arxiv.org/abs/1312.5602v1)]
+**Link:** [[arxiv](https://arxiv.org/abs/1312.5602v1)]
 
 ### Highlights
 
@@ -17,24 +17,24 @@
 
 - [Q-learning](https://towardsdatascience.com/simple-reinforcement-learning-q-learning-fcddc4b6fe56)
 
-### Problems to solve: 
+### Problems to solve
 
 - Learning to control agents from **high-dimensional sensory inputs** like vision and speech is hard.
 - RL algorithms have to learn from a scalar reward that is frequently **sparse, noisy and delayed**. 
 - Deep Learning algorithms assume the data samples to be independent. But RL algorithms typically encounter sequences of **highly correlated** states. Also, the data distribution is **non-stationary** for RL, it changes as the agent learns new behaviors.
 
-### Method:
+### Methods
 
 - **Neural network function approximator**: For atari games, the state space is large and the action space is small, it's infeasible to use Q table to solve the games. A neural network function approximator with weight <img src="https://latex.codecogs.com/svg.latex?\dpi{300}&space;\large&space;\theta" title="\large \theta" /> as the action-value function approximator can do the work, namely Deep Q Network. 
   - Use **CNN** to extract the high-level features of the high-dimensional sensory input data of the game interface. The parameters can be updated with a variant of Q-Learning, with SGD to update the weights.
 - **Experience replay mechanism**
   - At each time step, the agent stores its experience as state transitions <img src="https://latex.codecogs.com/svg.latex?\large&space;e_t&space;=&space;(s_t,&space;a_t,&space;r_t,&space;s_{t&plus;1})" title="\large e_t = (s_t, a_t, r_t, s_{t+1})" />pooled over many episodes into a *replay memory*.
   - When updating the Deep Q Network, the agent randomly samples a minibatch of state transitions from the replay memory. And the agent performs minibatch gradient descent on the mean square error between <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(s_t,a_t;\theta)" title="\large Q(s_t,a_t;\theta)" />(state-action value) and <img src="https://latex.codecogs.com/svg.latex?\large&space;y_t=r_t&plus;\gamma\max_{a'}Q(s_{t&plus;1},{a^\prime};\theta)" title="\large y_t=r_t+\gamma\max_{a'}Q(s_{t+1},{a^\prime};\theta)" /> (TD-target).
-- **Algorithm**:
+- **Algorithm**
 
 > ![algo](../imgs/001_1.png)
 
-- **Tricks**:
+- **Tricks**
   - **Reward clipping**: Since the scale of scores varies greatly from game to game, positive rewards were set to 1 and all negative rewards set to be −1, leaving 0 rewards unchanged. Clipping the rewards in this manner limits the scale of the error derivatives and makes it easier to use the same learning rate across multiple games.
   - **Frame-skipping**: The agent sees and selects actions on every <img src="https://latex.codecogs.com/svg.latex?k^{th}" title="k^{th}" /> frame instead of every frame, and its last action is repeated on skipped frames. -> play more games without increasing too much runtime.
 

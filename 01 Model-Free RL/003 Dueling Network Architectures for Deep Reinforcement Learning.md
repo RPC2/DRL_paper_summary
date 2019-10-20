@@ -1,29 +1,44 @@
 # Dueling Network Architectures for Deep Reinforcement Learning
 
-Authors: Ziyu Wang, Tom Schaul, Matteo Hessel, Hado van Hasselt, Marc Lanctot, Nando de Freitas
+**Authors**: Ziyu Wang, Tom Schaul, Matteo Hessel, Hado van Hasselt, Marc Lanctot, Nando de Freitas
 
-Year: 2015
+**Year**: 2015
 
-Algorithm: Dueling DQN
+**Algorithm**: Dueling DQN
 
-- Problem
+**Link**: [[arxiv](https://arxiv.org/abs/1511.06581)]
 
-  - The focus of combining reinforcement learning with standard neural networks is primarily on designing improved control, or simply incorporating deep learning into reinforcement learning.
+### Highlight
 
-- Hypothesis
+- **Dueling Architecture: Separating state value function and action advantage function**
 
-  - The proposed dueling network architecture is better-suited for model-free reinforcement learning, which can be easily combined with existing and future reinforcement learning algorithms.
+### Prerequisites
 
-- Methods
+- DQN algorithm [[paper](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf)] [[summary](https://github.com/RPC2/DRL_paper_summary/blob/master/01 Model-Free RL/001 Playing Atari with Deep Reinforcement Learning.md)]
+- Knowledge on advantage function
 
-  - There are two estimators: one for estimating the state value function, and another for the state-dependent action advantage function. 
+### Problems to solve
 
-  - The dueling network can be understood as a standard CNN with changing the linear layer into two streams, then combining the two streams by a special aggregation layer.
+- 
 
-  - The final output for both networks are both the estimations of the state-action value function Q.
+### Methods
 
-    ![alt text](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/003_1.png)
+- **The Dueling Architecture**: It modifies the original DQN network structure by introducing two streams of fully connected layer after all the convolution operations: one serves as the state value estimator, and another calculates the advantage for each action.
 
-  - Key insight:  At some moments in a game, whether the agent decides to move right or left doesn't impact the game score significantly. Therefore, some states require more critical attentions on actions, and in some states the agent can just be more relaxed. The dueling network with two streams can learn the value and advantage functions separately, and thus learn to tell the significance of each state, without having to learn the effect of each action for that state.
+- The two streams are combined through the equation <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(s,a;\theta, \alpha, \beta) = V(s; \theta,\beta) + (A(s,a;\theta,\alpha) - \frac{1}{|A|}\sum_{a'} A(s, a';\theta,\alpha))" title="\large Q(s,a;\theta, \alpha, \beta) = V(s; \theta,\beta) + (A(s,a;\theta,\alpha) - \frac{1}{|A|}\sum_a' A(s, a';\theta,\alpha))" />, 
 
-  - The resulting Dueling DQN can also take existing improvements of general DQN structures such as better replay memories, better exploration policies, etc.
+  where <img src="https://latex.codecogs.com/svg.latex?\large&space;\alpha" title="alpha" /> and <img src="https://latex.codecogs.com/svg.latex?\large&space;\beta" title="beta" /> are the parameters of the two streams of fully-connected layers.
+
+  (For how this equation is developed, please refer to the original paper.)
+
+  The dueling network can thus produce separate estimations of the state-value function <img src="https://latex.codecogs.com/svg.latex?V" title="V" />and advantage function<img src="https://latex.codecogs.com/svg.latex?A" title="A" /> without other supervision.
+
+- The network structure:
+
+  (top: the regular single-stream DQN, bottom: the dueling Q-network)
+
+  ![algo](../imgs/003_1.png)
+
+### Comments
+
+- **Key insights**: In some states, which actions to take for the agent doesn't have significant meanings to the scoring of the game. In Breakout and Pong, it might be the times when the ball is very far away from the sliding bar. In Enduro (a car racing game), it is when a collision is unlikely to happen. For algorithms that are bootstrapping based, 
