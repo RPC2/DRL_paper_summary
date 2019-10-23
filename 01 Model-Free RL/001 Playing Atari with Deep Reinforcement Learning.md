@@ -21,7 +21,7 @@
 
 - Learning to control agents from **high-dimensional sensory inputs** like vision and speech is hard.
 - RL algorithms have to learn from a scalar reward that is frequently **sparse, noisy and delayed**. 
-- Deep Learning algorithms assume the data samples to be independent. But RL algorithms typically encounter sequences of **highly correlated** states. Also, the data distribution is **non-stationary** for RL, it changes as the agent learns new behaviors.
+- Deep Learning algorithms assume the data samples to be independent. But RL algorithms typically encounter sequences of **highly correlated** states. Also, the data distribution is **non-stationary** for RL. It changes as the agent learns new behaviors.
 
 ### Methods
 
