@@ -42,17 +42,17 @@
 - Unidentifiability
 
   - Problem: Equation (7) is unidentifiable in the sense that given <img src="https://latex.codecogs.com/svg.latex?\large&space;Q" title="formula"/> we cannot recover <img src="https://latex.codecogs.com/svg.latex?\large&space;V" title="formula" /> and <img src="https://latex.codecogs.com/svg.latex?\large&space;A" title="formula" /> uniquely. To see this, add a constant to <img src="https://latex.codecogs.com/svg.latex?\large&space;V(s;\theta,\beta)" title="formula" /> and subtract the same constant from <img src="https://latex.codecogs.com/svg.latex?\large&space;A(s,a;\theta,\alpha)" title="formula" />. This constant cancels out resulting in the same <img src="https://latex.codecogs.com/svg.latex?\large&space;Q" title="formula" /> value.
-  - Improvement: For a deterministic policy, <img src="https://latex.codecogs.com/svg.latex?\large&space;a^{*}=\arg{\max}_{a{′}\inA} Q(s,a')" title="formula" />, it follows
+  - Improvement: For a deterministic policy, <img src="https://latex.codecogs.com/svg.latex?\large&space;a^{*}=\arg{\max}_{a{′}\inA}Q(s,a')" title="formula" />, it follows
     that <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(s,a^{∗})=V(s)" title="formula" />and hence <img src="https://latex.codecogs.com/svg.latex?\large&space;A(s,a^{∗})=0" title="formula" />. So we can force the advantage function estimator to have zero advantage at the chosen action.
     
     ![003-4](../imgs/003_5.png)
     
-    - Now, for <img src="https://latex.codecogs.com/svg.latex?\large&space;a^{*}=\arg\max_{a'\in A}Q(s,a';\theta,\alpha,\beta)=\arg\max_{a'\inA} A(s,a';\theta,\alpha)" title="formula" />, we obtain <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(s, a^{∗}; \theta, \alpha, \beta) = V (s; \theta, \beta)" title="formula" />. Hence, the stream <img src="https://latex.codecogs.com/svg.latex?\large&space; V (s; \theta, \beta)" title="formula" /> provides an estimate of the value function, while the other stream produces an estimate of the advantage function.
+    - Now, for <img src="https://latex.codecogs.com/svg.latex?\large&space;a^{*}=\arg\max_{a'\inA}Q(s,a';\theta,\alpha,\beta)=\arg\max_{a'\inA}A(s,a';\theta,\alpha)" title="formula" />, we obtain <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(s,a^{∗};\theta,\alpha,\beta)=V(s;\theta,\beta)" title="formula" />. Hence, the stream <img src="https://latex.codecogs.com/svg.latex?\large&space;V(s;\theta,\beta)" title="formula" /> provides an estimate of the value function, while the other stream produces an estimate of the advantage function.
   - Alternative:
     
     ![003-5](../imgs/003_6.png)
     
-    - (9) does not change the relative rank of <img src="https://latex.codecogs.com/svg.latex?\large&space; A" title="formula" /> (and hence <img src="https://latex.codecogs.com/svg.latex?\large&space; Q" title="formula" />) values. On the one hand this loses the original semantics of <img src="https://latex.codecogs.com/svg.latex?\large&space; V" title="formula" /> and <img src="https://latex.codecogs.com/svg.latex?\large&space; A" title="formula" /> because they are now off-target by a constant, but on the other hand it increases the stability of the optimization.
+    - (9) does not change the relative rank of <img src="https://latex.codecogs.com/svg.latex?\large&space;A" title="formula" /> (and hence <img src="https://latex.codecogs.com/svg.latex?\large&space;Q" title="formula" />) values. On the one hand this loses the original semantics of <img src="https://latex.codecogs.com/svg.latex?\large&space;V" title="formula" /> and <img src="https://latex.codecogs.com/svg.latex?\large&space;A" title="formula" /> because they are now off-target by a constant, but on the other hand it increases the stability of the optimization.
 
 - By separating the state and advantage estimation, intuitively, the dueling architecture can learn which states are valuable without having to learn the effect of each action for each state (which is adopted by the standard Q learning).
 
