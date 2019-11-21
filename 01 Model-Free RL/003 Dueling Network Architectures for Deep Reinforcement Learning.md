@@ -62,8 +62,8 @@
 
 - **Key insights**: 
   
-- In some states, which actions to take for the agent doesn't have significant meanings to the scoring of the game. In Breakout and Pong, it might be the times when the ball is very far away from the sliding bar. In Enduro (a car racing game), it is when a collision is unlikely to happen. 
+  - In some states, which actions to take for the agent doesn't have significant meanings to the scoring of the game. In Breakout and Pong, it might be the times when the ball is very far away from the sliding bar. In Enduro (a car racing game), it is when a collision is unlikely to happen. 
+    
+  - This paper leverages this observation, and interestingly, reported the saliency maps during game playing. The value stream and the advantage stream learns to pay attention to different objects in the game state:
   
-- This paper leverages this observation, and interestingly, reported the saliency maps during game playing. The value stream and the advantage stream learns to pay attention to different objects in the game state:
-
   ![algo](../imgs/003_3.png)
