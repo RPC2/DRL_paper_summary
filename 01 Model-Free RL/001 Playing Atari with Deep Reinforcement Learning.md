@@ -29,7 +29,7 @@
   - Use **CNN** to extract the high-level features of the high-dimensional sensory input data of the game interface. The parameters can be updated with a variant of Q-Learning, with SGD to update the weights.
 - **Experience replay mechanism**
   - At each time step, the agent stores its experience as state transitions <img src="https://latex.codecogs.com/svg.latex?\large&space;e_t=(s_t,a_t,r_t,s_{t+1})" title="\large&space;e_t=(s_t,a_t,r_t,s_{t+1})"/>pooled over many episodes into a *replay memory*.
-  - When updating the Deep Q Network, the agent randomly samples a minibatch of state transitions from the replay memory. And the agent performs minibatch gradient descent on the mean square error between <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(s_t,a_t;\theta)" title="\large Q(s_t,a_t;\theta)"/>(state-action value) and <img src="https://latex.codecogs.com/svg.latex?\large&space;y_t=r_t+\gamma\max_{a'}Q(s_{t+1},{a^\prime};\theta)" title="\large&space;y_t=r_t+\gamma\max_{a'}Q(s_{t+1},{a^\prime};\theta)"/> (TD-target).
+  - When updating the Deep Q Network, the agent randomly samples a minibatch of state transitions from the replay memory. And the agent performs minibatch gradient descent on the mean square error between <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(s_t,a_t;\theta)" title="\large Q(s_t,a_t;\theta)"/>(state-action value) and <img src="https://latex.codecogs.com/svg.latex?\large&space;y_t=r_t+\gamma\max_{a'}Q(s_{t+1},{a'};\theta)" title="\large&space;y_t=r_t+\gamma\max_{a'}Q(s_{t+1},{a^\prime};\theta)"/> (TD-target).
 - **Algorithm**
 
 > ![algo](../imgs/001_1.png)
