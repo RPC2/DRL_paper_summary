@@ -72,7 +72,7 @@
 
 ### Method
 
-####The Integrated Agent
+#### The Integrated Agent
 
 - Replace the 1-step **distributional** loss with a **multi-step variant.** Then construct the target distribution as follows:
   
