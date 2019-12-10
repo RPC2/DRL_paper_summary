@@ -26,8 +26,8 @@
 ### Methods
 
 - **Solving Partial Observability**
-  - **POMDP** can be described by <img src="https://latex.codecogs.com/svg.latex?\large(S,A,P,R,\Omega,&space;O)" title="Equation"/> — (states, actions, transitions, rewards). <img src="https://latex.codecogs.com/svg.latex?\large&space;o\in\Omega" title="\large o\in\Omega\\text{and}\&space;o\sim&space;O(s)" />and  <img src="https://latex.codecogs.com/svg.latex?\large o" title="o"/> is an observation.
-  - In general cases, estimating a Q-value from an obervation can be arbitrarily bad since <img src="https://latex.codecogs.com/svg.latex?\large Q(o,a|\theta)\neQ(s,a|\theta)" title="\largeQ(o,a|\theta)\neQ(s,a|\theta)"/>. The paper's goal is to narrow the gap between these two.
+  - **POMDP** can be described by <img src="https://latex.codecogs.com/svg.latex?\large(S,A,P,R,\Omega,&space;O)" title="Equation"/> — (states, actions, transitions, rewards). <img src="https://latex.codecogs.com/svg.latex?\large&space;o\in\Omega" title="\large o\in\Omega\\text{and}\&space;o\sim&space;O(s)" /> is an observation.
+  - In general cases, estimating a Q-value from an obervation can be arbitrarily bad since <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(o,a|\theta)\neQ(s,a|\theta)" title="\largeQ(o,a|\theta)\neQ(s,a|\theta)"/>. The paper's goal is to narrow the gap between these two.
 
 - **Network Architecture**
   - The DRQN architecture is constructed by combining Long Short Term Memory (LSTM) units with a Deep Q-Network. 
