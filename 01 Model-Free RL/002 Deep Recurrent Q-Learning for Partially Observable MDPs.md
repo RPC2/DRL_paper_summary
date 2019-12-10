@@ -26,8 +26,8 @@
 ### Methods
 
 - **Solving Partial Observability**
-  - **POMDP** can be described by <img src="https://latex.codecogs.com/svg.latex?\large&space;(S,A,P,R,\Omega,&space;O)" title="\large (S,A,P,R,\Omega, O)" /> — (states, actions, transitions, rewards). <img src="https://latex.codecogs.com/svg.latex?\large&space;o\in&space;\Omega\&space;\text{and}\&space;o\sim&space;O(s)" title="\large o\in \Omega\ \text{and}\ o\sim O(s)" />, <img src="https://latex.codecogs.com/svg.latex?\large&space;o" title="\large o" /> is an observation.
-  - In general cases, estimating a Q-value from an obervation can be arbitrarily bad since <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(o,a|\theta)\ne&space;Q(s,a|\theta)" title="\large Q(o,a|\theta)\ne Q(s,a|\theta)" />. The paper's goal is to narrow the gap between these two.
+  - **POMDP** can be described by <img src="https://latex.codecogs.com/svg.latex?\large(S,A,P,R,\Omega,&space;O)" title="Equation"/> — (states, actions, transitions, rewards). <img src="https://latex.codecogs.com/svg.latex?\large&space;o\in\Omega" title="\large o\in\Omega\\text{and}\&space;o\sim&space;O(s)" /> is an observation.
+  - In general cases, estimating a Q-value from an obervation can be arbitrarily bad since <img src="https://latex.codecogs.com/svg.latex?\large&space;Q(o,a|\theta)\neQ(s,a|\theta)" title="\largeQ(o,a|\theta)\neQ(s,a|\theta)"/>. The paper's goal is to narrow the gap between these two.
 
 - **Network Architecture**
   - The DRQN architecture is constructed by combining Long Short Term Memory (LSTM) units with a Deep Q-Network. 
@@ -38,7 +38,7 @@
 
 - In the experiments, the trained DRQN is capable of making satisfactory decisions even if it is only given **a single frame** about the game state. It outperforms the original DQN algorithm especially when the given state information is incomplete. 
 - **MDP to POMDP Generalization**: the experiments showed that the perfomance of a DRQN degrades more gracefully than DQNs, when it was trained on normal Pong (MDPs) and then evaluated on flickering Pong (screen is obscured with certain probability; POMDPs). The recurrent controllers have a certain degree of robustness against missing information, even trained with full state information.
-  - ![002_2](../imgs/002_2.png)
+  - <img src="../imgs/002_2.png" alt="002_2" style="zoom: 30%;" />
 
 ### Comments
 

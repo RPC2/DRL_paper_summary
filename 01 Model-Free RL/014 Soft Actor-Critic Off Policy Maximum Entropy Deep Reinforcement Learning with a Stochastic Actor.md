@@ -1,57 +1,44 @@
 # Soft Actor-Critic: Off Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor
 
-Authors: Tuomas Harrnoja, Aurick Zhou, Pieter Abbeel, Sergey Levine
+**Authors: Tuomas Harrnoja, Aurick Zhou, Pieter Abbeel, Sergey Levine**
 
-Year: 2018
+**Year: 2018**
 
-- Problems
+**Algorithm: SAC**
 
-  - Two major challenges for model-free deep reinforcement learning: 
-    1. Very high sample complexity
-    2. Brittle convergence properties
+**Link**: [[arxiv](https://arxiv.org/abs/1801.01290)]
 
-- Overview of the algorithm
+### Highlight
 
-  - The actor aims to maximize expected reward while maximizing entropy (to succeed at the task while acting as randomly as possible)
-    - Maximum entropy policies are robust with model and estimation errors because they improve exploration b y acquiring diverse behaviors.
+- Bridging actor-critic methods with Q learning
+- Incorporating policy entropy into reward functions --> A substantial improvement in exploration and robustness
 
-- Preliminaries
+### Prerequisites
 
-  - Maximum Entropy Reinforcement Learning
+- Basic understandings on Q-learning and Policy Gradient methods
 
-    Compared with traditional reinforcement learning, the maximum entropy objective favors stochastic policies by augmenting the objective with the expected entropy of the policy:
+### Main Contribution
 
-    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/014_1.png)
+- It connects both on-policy and off-policy methods to reduce sample complexity while being stable across hyperparameters and random seeds
+- It incorporates policy entropy into reward functions --> A substantial improvement in exploration and robustness
+- It is the first off-policy actor-critic method in the maximum entropy reinforcement learning framework.
 
-    - Several advantages of this objective:
-      1. The policy is likely to explore more widely.
-      2. The policy can find multiple modes of near-optimal behavior.
-      3. Prior work has observed improved exploration with this objective
+### Methods
 
-  - Deriving soft policy iteration
+- **Maximum Entropy Reinforcement Learning**
 
-    - What it is
+  - Standard RL maximizes the expected sum of rewards from the environments, but the maximum entropy methods favor stochastic policies by including the policy's entropy into the objective calculation:
 
-      A general algorithm for learning optimal maximum entropy policies that alternates between policy evaluation and policy improvement in the maximum entropy framework.
+    ![J](../imgs/014_1.png)
 
-    - Method
+  - The <img src="https://latex.codecogs.com/svg.latex?\large&space;\alpha" /> term determines the relative importance of the entropy term against the reward, and thus controls the extent of randomness (stochasticity) of the optimal policy.
 
-      - To compute the soft Q-value, repeatedly apply the modified Bellman backup:
+  - Advantages of this design:
 
-      ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/014_2.png)
+    1. The policy is incentivized to explore more widely.
+    2. The policy can capture multiple modes of near-optimal behavior.
+    3. Exploration is improved.
 
-      - Lemma 1: With the soft Bellman backup in Eqation 2, the sequence of Q value will converge to the soft Q-value of the policy as time gets to infinity.
+- **Derivation of Soft Policy Iteration**
 
-      - Policy improvement: For each state, update the policy according to
-
-        ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/014_3.png)
-
-      - Lemma 2: With soft policy improvement, for all state-action pairs, the Q values under the new policy are all higher than the Q values from the old policy.
-
-      - Theorem 1: Repeated application of soft policy evaluation and soft policy improvement will let any initial policy converge to the optimal policy.
-
-- Soft Actor-Critic
-
-  - Algorithm
-
-    ![img](https://github.com/RPC2/DRL_paper_summary/blob/master/imgs/014_4.png)
+  - 
