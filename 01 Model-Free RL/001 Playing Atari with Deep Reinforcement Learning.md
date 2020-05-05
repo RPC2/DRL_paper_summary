@@ -1,10 +1,5 @@
 # Playing Atari with Deep Reinforcement Learning
 
-<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
-<script type="text/javascript">
-LatexIT.add('p',true);
-</script>
-
 **Authors**: [DeepMind] Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, Martin Riedmiller
 
 **Year**: 2013
