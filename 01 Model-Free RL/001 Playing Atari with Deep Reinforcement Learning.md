@@ -25,7 +25,7 @@
 
 ### Methods
 
-- **Neural network function approximator**: For atari games, the state space is large and the action space is small, it's infeasible to use Q table to solve the games. A neural network function approximator with weight $\theta$ as the action-value function approximator can do the work, namely Deep Q Network. 
+- **Neural network function approximator**: For atari games, the state space is large and the action space is small, it's infeasible to use Q table to solve the games. A neural network function approximator with weight $`\theta`$ as the action-value function approximator can do the work, namely Deep Q Network. 
   - Use **CNN** to extract the high-level features of the high-dimensional sensory input data of the game interface. The parameters can be updated with a variant of Q-Learning, with SGD to update the weights.
 - **Experience replay mechanism**
   - At each time step, the agent stores its experience as state transitions <img src="https://latex.codecogs.com/svg.latex?\large&space;e_t=(s_t,a_t,r_t,s_{t+1})" title="\large&space;e_t=(s_t,a_t,r_t,s_{t+1})"/>pooled over many episodes into a *replay memory*.
